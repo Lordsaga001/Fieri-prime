@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="nav">
+            <a class="nav-logo" href="#">
+                <img src="image/the-name.png" alt="logo image">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Skills</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <button class="nav-cta">Start Learning</button>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar ends here -->
+    <div class="box-2">
+        <div class="box-2-text">
+            <h1>
+                <span> Learn </span>Any <span> Tech Skill </span>With<br> Your Personal AI Tutor.
+            </h1>
+            <h5>
+                Personalized lesson, adaptive pace, real understanding.
+            </h5>
+            <button class="landing-btn-1">
+                Start Learning
+            </button>
+            <button class="landing-btn-2">
+                Explore Skills
+            </button>
+        </div>
+        <div>
+            <img src="image/main.png" alt="logo image">
+        </div>
+    </div>
+    <!-- landing page ends here -->
+     <div class="aft-landing">
+            <h1>How it works</h1>
+     </div>
+    <div class="works">
+        <div class="works-1">
+            <img src="image/choose.webp" alt="choose">
+            <p>Choose a skill</p>
+        </div>
+        <div class="works-2">
+            <img src="image/learn.jpg" alt="learn">
+            <p>Learn with AI tutor</p>
+        </div>
+        <div class="works-3">
+            <img src="image/sell.jpg" alt="sell">
+            <p>Learn to sell Your skill</p>
+        </div>
+        <div class="works-4">
+            <img src="image/client.jpg" alt="client">
+            <p> Get connected to your client</p>
+        </div>
+    </div>
+    <div class="ski-li">
+            <h1> Skills Library</h1>
+    </div>
+    <div class="skills-library">
+        <div class="web-dev">
+          <img src="image/codeing.jpg"  >
+          <p>Web development</p>
+        </div>
+        <div class="graph-des">
+          <img src="image/graphic.jpg"  > 
+          <p>Graphic desining</p>
+        </div>
+        <div class="cloud-comp">
+          <img src="image/cloud.jpg"  >
+          <p>Cloud computing</p>
+        </div>
+         <div class="cyber-sec">
+          <img src="image/cyber.jpg"  >
+          <p> Cyber security</p>
+        </div>
+    </div>
+
+    <div>
+        <i class="fa fa-shopping-cart"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+    </div>
+
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var menu = document.getElementById('nav-menu');
+            function setOpen(open) {
+                menu.classList.toggle('open', open);
+                toggle.setAttribute('aria-expanded', open);
+            }
+            toggle.addEventListener('click', function () {
+                setOpen(!menu.classList.contains('open'));
+            });
+            menu.addEventListener('click', function (e) {
+                if (e.target.closest('a')) setOpen(false);
+            });
+        })();
+    </script>
+</body>
+
+</html>
